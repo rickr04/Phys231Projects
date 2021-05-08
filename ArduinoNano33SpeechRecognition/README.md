@@ -75,7 +75,7 @@ Here is a video showing you how to run the script as well as a detailed written 
 <a href="https://youtu.be/CjSUhOtDkTw" target="_blank"><img src="http://img.youtube.com/vi/CjSUhOtDkTw/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> </br>
 
-Now use your shell to navigate to the speech-recognition folder (where the python files are) </br>
+Use your shell to navigate to the speech-recognition folder (where the python files are) </br>
 And run the “dataset-curation.py” file
 ``` 
 python dataset-curation.py -t "*keyword1 , keyword2, etc*" -n 1500 -w 1.0 -g 0.1 -s 1.0 -r 16000 -e PCM_16 -b "*path to _background_noise_*" -o "*path to dataset folder*\keywords_curated" "*path to data_speech_commands*" "*path to custom_keywords folder*"
