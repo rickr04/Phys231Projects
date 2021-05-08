@@ -7,7 +7,7 @@
 ### Tooling And Necessary Files 
 Download the latest version of python with pip (currently 3.9.5) </br>
 https://www.python.org/downloads </br>
-Open up your shell of choice/the command line (Gitbash runs into some issues so I recommend not using that) and download numpy, librosa, and soundfile by run the following: 
+Open up your shell of choice/the command line (For Windows I recommend Windows PowerShell or Command Prompt and avoiding Git Bash as that runs into some issues) and download numpy, librosa, and soundfile by run the following: 
 ```python -m pip install librosa numpy soundfile``` </br>
 Now that we have all the tooling we need lets move onto some other files we must aquire. </br>
 
