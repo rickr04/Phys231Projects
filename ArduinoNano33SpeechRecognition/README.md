@@ -21,6 +21,7 @@ ei-keyword-spotting-master (unzipped)
 
 data_speech_commands_v0.02.tar.gz (a lot of files don’t unzip yet)
  ``` 
+### Setting Up Our Folder Structure
 Now make 4 folders (the first one is going to have 2 subfolders):
 ```
 datasets
