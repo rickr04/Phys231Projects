@@ -31,7 +31,7 @@ speech-recognition
 ```
 Best place to put them is in your documents </br>
 C:\Users\ *\*Admin/your name\** \Documents </br>
-If you’re using mac good luck lol  </br>
+
 
 Now from ei-keyword-spotting-master take the two .py files and move them into the “speech-recognition” folder (dataset-curation.py and utils.py)
 ```
