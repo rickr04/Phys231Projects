@@ -3,5 +3,5 @@
 
 
 ## Credits
-https://www.youtube.com/watch?v=fRSVQ4Fkwjc&ab_channel=Digi-Key
+https://www.youtube.com/watch?v=fRSVQ4Fkwjc&ab_channel=Digi-Key </br>  
 https://github.com/ShawnHymel/ei-keyword-spotting
