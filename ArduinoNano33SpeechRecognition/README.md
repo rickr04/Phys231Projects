@@ -108,7 +108,7 @@ Example full call I did:
 python dataset-curation.py -t "kirchoffslaw, dog" -n 1500 -w 1.0 -g 0.1 -s 1.0 -r 16000 -e PCM_16 -b "C:\Users\rickr\Documents\datasets\_background_noise_" -o "C:\Users\rickr\Documents\datasets\keywords_cureated" "C:\Users\rickr\Documents\datasets\data_speech_commands" "C:\Users\rickr\Documents\datasets\custom_keywords"
 ```
 
-## Edge Impulse 
+### Edge Impulse 
 <a href="https://youtu.be/fRSVQ4Fkwjc?t=619" target="_blank"><img src="http://img.youtube.com/vi/fRSVQ4Fkwjc/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> </br>
 Watch the ending of this video for instructions on how to finish creating your neural network </br>
