@@ -116,8 +116,7 @@ Watch the ending of this video for instructions on how to finish creating your n
 The platform.local.txt mentioned in the video for the Arduino upload error is located in this repo
 
 
-If you would rather watch the full guide from Shawn Hymel here is the link: </br>
-https://www.youtube.com/watch?v=fRSVQ4Fkwjc&ab_channel=Digi-Key
+If you would rather watch the full guide from Shawn Hymel here is the [link][reference link4] </br>
 It's a great video but I personally ran into a few glitch/errors and did my best to correct them with this guide. Regardless Shawn Hymel does a great job at explaining things.
 
 ## Credits
@@ -129,4 +128,5 @@ https://github.com/ShawnHymel/ei-keyword-spotting
 
 [reference link2]: https://github.com/ShawnHymel/ei-keyword-spotting
 [reference link3]:  https://www.audacityteam.org/download
+[reference link4]:  https://www.youtube.com/watch?v=fRSVQ4Fkwjc&ab_channel=Digi-Key
 
