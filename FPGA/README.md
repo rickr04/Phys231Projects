@@ -12,6 +12,8 @@ https://www.mocomakers.com/basic-setup-of-the-fipsy-fpga </br>
 If you want to use an Arduino Moco Makers also have some documentation but the code has some issues: </br>
 https://www.mocomakers.com/wiki/arduino-programmer-for-fipsy
 
+If you are using the Raspberry Pi I recommend using the remote desktop that you set up in the bootstrapping of your micocontrollers. As far as transfering files from your computer to the pi it's really up to you, there are a lot of easy/good ways to do it. I personally used SCP from the command line and it has always worked for me.
+
 ### Projects
 
 #### Making The FPGA Into An Arduino
@@ -25,5 +27,30 @@ https://www.mocomakers.com/wiki/external-resources/
 
 
 #### Basic Blink
+Open up Lattice Dimaond </br>
+File -> Open -> Project </br>
+Open up the Fipsy-FPGA-edu files you downloaded and navigate to the examples sections </br>
+In my case the path looked like this:
+```
+E:\fpga\Fipsy-FPGA-edu-master\Examples
+```
+Find and enter the "1.Blinky" example and open the "project_files" folder. </br>
+You should then be able to open the "FipsyBaseline.ldf" file and you should see all the project files load up in Lattice
+
+The files are all written in Verilog which is a Hardware Description Language. It's not a programming lanague rather it is just descreibtions of how your hardware should work. Once you get the hang of it and start learning it's pretty strightfoward and quite powerful. 
+
+Navigate to "Fipsy_Top.V". Here is where you will see all the pins defined and whether or not they are going to be used for input/output. As you create your own projects you will modfify this file to suit your needs.
+
+Navigate to "FreqDiv20Bit.v" within the Sources/AppModules
+
 
 #### UART 
+Open up Lattice Dimaond </br>
+File -> Open -> Project </br>
+Open up the Fipsy-FPGA-edu files you downloaded and navigate to the examples sections </br>
+In my case the path looked like this:
+```
+E:\fpga\Fipsy-FPGA-edu-master\Examples
+```
+Find and enter the "4.SendaCharacter" example and open the "project_files" folder. </br>
+You should then be able to open the "FipsyBaseline.ldf" file and you should see all the project files load up in Lattice
