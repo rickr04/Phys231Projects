@@ -45,6 +45,9 @@ Navigate to "Fipsy_Top.V". Here is where you will see all the pins defined and w
 
 Navigate to "FreqDiv20Bit.v" within the Sources/AppModules. Here you see a 20-Bit counter that is being updated on every positive edge of the clock (@posedge CLOCK). After the counter is created the Verilog code selects the 19th bit of this counter as output for the onboard LED. This is done to slow done the blink rate. Here is a good link to visiual this logic if you don't understand: https://www.usdebtclock.org/world-debt-clock.html. If we select a bit that is closer to the MSB (most siginificant bit/higher order) then the blink rate is going to be slow (it takes longer for the bigger number to change vs. the smaller number). If select a bit that is closer to the LSB (least signifcant bit/lower order) then the blink rate is going to speed up. Tru to increase the blink rate until you can no longer see the onboard LED flash. Because this is binary you are going to see the blink rate change in powers of 2!
 
+Lets wire up a potentiometer to create a 1 bit adc.
+Wire power to pin 13, ground to pin 16, and the signal wire to pin 14.
+
 
 #### UART 
 Open up Lattice Dimaond </br>
