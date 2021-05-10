@@ -39,11 +39,11 @@ E:\fpga\Fipsy-FPGA-edu-master\Examples
 Find and enter the "1.Blinky" example and open the "project_files" folder. </br>
 You should then be able to open the "FipsyBaseline.ldf" file and you should see all the project files load up in Lattice
 
-The files are all written in Verilog which is a Hardware Description Language. It's not a programming lanague rather it is just descreibtions of how your hardware should work. Once you get the hang of it and start learning it's pretty strightfoward and quite powerful. 
+The files are all written in Verilog which is a Hardware Description Language. It's not a programming lanague rather it is just descreibtions of how your hardware should work. 
 
 Navigate to "Fipsy_Top.V". Here is where you will see all the pins defined and whether or not they are going to be used for input/output. As you create your own projects you will modfify this file to suit your needs.
 
-Navigate to "FreqDiv20Bit.v" within the Sources/AppModules. Here you see a 20-Bit counter that is being updated on every positive edge of the clock (@posedge CLOCK). After the counter is created the Verilog code selects the 19th bit of this counter as output for the onboard LED. This is done to slow done the blink rate. Here is a good link to visiual this logic if you don't understand: https://www.usdebtclock.org/world-debt-clock.html. If we select a bit that is closer to the MSB (most siginificant bit/higher order) then the blink rate is going to be slow (it takes longer for the bigger number to change vs. the smaller number). If select a bit that is closer to the LSB (least signifcant bit/lower order) then the blink rate is going to speed up. Feel free to play with this until you can no longer see the onboard LED flash. Because this is binary you are going to see the blink rate change in powers of 2!
+Navigate to "FreqDiv20Bit.v" within the Sources/AppModules. Here you see a 20-Bit counter that is being updated on every positive edge of the clock (@posedge CLOCK). After the counter is created the Verilog code selects the 19th bit of this counter as output for the onboard LED. This is done to slow done the blink rate. Here is a good link to visiual this logic if you don't understand: https://www.usdebtclock.org/world-debt-clock.html. If we select a bit that is closer to the MSB (most siginificant bit/higher order) then the blink rate is going to be slow (it takes longer for the bigger number to change vs. the smaller number). If select a bit that is closer to the LSB (least signifcant bit/lower order) then the blink rate is going to speed up. Tru to increase the blink rate until you can no longer see the onboard LED flash. Because this is binary you are going to see the blink rate change in powers of 2!
 
 
 #### UART 
@@ -54,5 +54,11 @@ In my case the path looked like this:
 ```
 E:\fpga\Fipsy-FPGA-edu-master\Examples
 ```
-Find and enter the "4.SendaCharacter" example and open the "project_files" folder. </br>
+Find and enter the "4.SendaString" example and open the "project_files" folder. </br>
 You should then be able to open the "FipsyBaseline.ldf" file and you should see all the project files load up in Lattice
+
+Navigate to the "send_string.v" file. This is your top level file and is where all your pin definitions are.
+
+Navigate to the "txstr.v" file. This is the file where the string you want to send is defined. Change the BAUDRATE to ``` `B9600``` from the 115200 it was at. 
+
+
