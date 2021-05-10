@@ -6,7 +6,7 @@ Unlike the microcontrollers you have been using for labs an FPGA is an integrate
 ### Setup
 The assumption is that you have completed all the setup/bootstrapping of your microcontrollers.
 
-If you are using a raspberry pi this link to the Moco Makers documentation works beautifully: </br>
+If you are using a Raspberry Pi this link to the Moco Makers documentation works beautifully: </br>
 https://www.mocomakers.com/basic-setup-of-the-fipsy-fpga </br>
 
 If you want to use an Arduino Moco Makers also have some documentation but the code has some issues: </br>
