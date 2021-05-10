@@ -14,6 +14,8 @@ https://www.mocomakers.com/wiki/arduino-programmer-for-fipsy
 
 If you are using the Raspberry Pi I recommend using the remote desktop that you set up in the bootstrapping of your micocontrollers. As far as transfering files from your computer to the pi it's really up to you, there are a lot of easy/good ways to do it. I personally used SCP from the command line and it has always worked for me.
 
+The basic idea behind all of this is that you are using Lattice Diamond to create a .jed from some Verilog files. You then need to get this .jed file onto your raspberry pi and use the fispy fpga loader tool to flash your board.
+
 ### Projects
 
 #### Making The FPGA Into An Arduino
@@ -41,7 +43,7 @@ The files are all written in Verilog which is a Hardware Description Language. I
 
 Navigate to "Fipsy_Top.V". Here is where you will see all the pins defined and whether or not they are going to be used for input/output. As you create your own projects you will modfify this file to suit your needs.
 
-Navigate to "FreqDiv20Bit.v" within the Sources/AppModules
+Navigate to "FreqDiv20Bit.v" within the Sources/AppModules. Here you see a 20-Bit counter that is being updated on every positive edge of the clock (@posedge CLOCK). After the counter is created the Verilog code selects the 19th bit of this counter as output for the onboard LED. This is done to slow done the blink rate. Here is a good link to visiual this logic if you don't understand: https://www.usdebtclock.org/world-debt-clock.html. If we select a bit that is closer to the MSB (most siginificant bit/higher order) then the blink rate is going to be slow (it takes longer for the bigger number to change vs. the smaller number). If select a bit that is closer to the LSB (least signifcant bit/lower order) then the blink rate is going to speed up. Feel free to play with this until you can no longer see the onboard LED flash. Because this is binary you are going to see the blink rate change in powers of 2!
 
 
 #### UART 
