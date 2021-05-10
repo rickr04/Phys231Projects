@@ -43,7 +43,10 @@ The files are all written in Verilog which is a Hardware Description Language. I
 
 Navigate to "Fipsy_Top.V". Here is where you will see all the pins defined and whether or not they are going to be used for input/output. As you create your own projects you will modfify this file to suit your needs.
 
-Navigate to "FreqDiv20Bit.v" within the Sources/AppModules. Here you see a 20-Bit counter that is being updated on every positive edge of the clock (@posedge CLOCK). After the counter is created the Verilog code selects the 19th bit of this counter as output for the onboard LED. This is done to slow done the blink rate. Here is a good link to visiual this logic if you don't understand: https://www.usdebtclock.org/world-debt-clock.html. If we select a bit that is closer to the MSB (most siginificant bit/higher order) then the blink rate is going to be slow (it takes longer for the bigger number to change vs. the smaller number). If select a bit that is closer to the LSB (least signifcant bit/lower order) then the blink rate is going to speed up. Tru to increase the blink rate until you can no longer see the onboard LED flash. Because this is binary you are going to see the blink rate change in powers of 2!</br>
+Navigate to "FreqDiv20Bit.v" within the Sources/AppModules. Here you see a 20-Bit counter that is being updated on every positive edge of the clock (@posedge CLOCK). After the counter is created the Verilog code selects the 19th bit of this counter as output for the onboard LED. This is done to slow done the blink rate. Here is a good link to visiual this logic if you don't understand: https://www.usdebtclock.org/world-debt-clock.html. If we select a bit that is closer to the MSB (most siginificant bit/higher order) then the blink rate is going to be slow (it takes longer for the bigger number to change vs. the smaller number). If select a bit that is closer to the LSB (least signifcant bit/lower order) then the blink rate is going to speed up.
+
+Flash your FPGA board (as described in the setup section). </br>
+Try to increase the blink rate until you can no longer see the onboard LED flash. Because this is binary you are going to see the blink rate change in powers of 2!</br>
 
 ### 1 Bit ADC
 Open up Lattice Dimaond </br>
@@ -62,7 +65,7 @@ First lets change set a few of our pins to some desired values (seen below) and 
 Let's also change the condition where our LED lights up (ANDing with the signal pin of our potentiometer)
 <img src="https://github.com/rickr04/Phys231Projects/blob/main/FPGA/Images/LEDWIREUP.PNG" alt="drawing" width="400"/> </br>
 
-Flash your board and when you turn your pot enough your will see the LED start to blink, go the other way and the LED will stop.
+Flash your FPGA board and when you turn your pot enough your will see the LED start to blink, go the other way and the LED will stop.
 
 
 
@@ -85,7 +88,9 @@ Navigate to the "send_string.v" file. This is your top level file and is where a
 Navigate to the "txstr.v" file. This is the file where the string you want to send is defined. Change the BAUDRATE to ``` `B9600``` from the 115200 it was at. 
 
 Open up and upload the Arduino Nano 33 sketch from core lab 12 (should just work as it). 
-Now wire up the tx from the FPGA (defined as pin 8) to (whatever pin you decided was rx in the lab) and connect grounds (any pin that is set low on the FPGA works fine as a ground, use one of the two grounds predefined on the nano). Open up the serial mointor on the Arduino IDE and you should see the string you defined in "txtstr.v" being transmitted!
+Now wire up the tx from the FPGA (defined as pin 8) to (whatever pin you decided was rx in the lab) and connect grounds (any pin that is set low on the FPGA works fine as a ground, use one of the two grounds predefined on the nano).
+
+Flash your FPGA and then oen up the serial mointor on the Arduino IDE. You should see the string you defined in "txtstr.v" being transmitted!
 
 
 
