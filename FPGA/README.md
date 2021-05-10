@@ -24,8 +24,8 @@ Upon discussion with Dr. J about all these hurdles and looking into various reso
 
 However, if someone in the future wants to take this back up, I will include all the links and resources I went through to make your life easier and hopefully get something working one day:
 https://www.joelw.id.au/FPGA/CheapFPGADevelopmentBoards  </br>
-http://www.nxlab.fer.hr/fpgarduino
-https://www.mocomakers.com/wiki/external-resources/
+http://www.nxlab.fer.hr/fpgarduino </br>
+https://www.mocomakers.com/wiki/external-resources/ </br>
 
 
 #### Basic Blink
