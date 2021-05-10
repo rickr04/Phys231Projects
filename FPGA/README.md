@@ -22,7 +22,7 @@ The basic idea behind all of this is that you are using Lattice Diamond to creat
 Unfortunately, I ran into a lot of dead ends when attempting this project. </br>
 Upon discussion with Dr. J about all these hurdles and looking into various resources/reaching out to people he told me "In short, it makes sense to program an fpga to replace the serial port chip on the Arduino board, but not a lot more". It seems like the Fipsy FPGA Breakout Board was never meant to become the powerful Arduino it dreamed of :(
 
-However, if someone in the future wants to take this back up, I will include all the links and resources I went through to make your life easier and hopefully get something working one day:
+However, if someone in the future wants to take this back up, I will include all the links and resources I went through to make your life easier and hopefully get something working one day: </br>
 https://www.joelw.id.au/FPGA/CheapFPGADevelopmentBoards  </br>
 http://www.nxlab.fer.hr/fpgarduino </br>
 https://www.mocomakers.com/wiki/external-resources/ </br>
@@ -48,7 +48,7 @@ Navigate to "FreqDiv20Bit.v" within the Sources/AppModules. Here you see a 20-Bi
 Flash your FPGA board (as described in the setup section). </br>
 Try to increase the blink rate until you can no longer see the onboard LED flash. Because this is binary you are going to see the blink rate change in powers of 2!</br>
 
-### 1 Bit ADC
+#### 1 Bit ADC
 Open up Lattice Dimaond </br>
 File -> Open -> Project </br>
 Open up the Fipsy-FPGA-edu files you downloaded and navigate to the examples sections </br>
